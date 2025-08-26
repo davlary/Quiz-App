@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="style1.css"/> -->
+  </head>
+  <body>
+    <div class="flex-nav">
+      <h2 class="name">
+        <span class="brand">LeX</span><span class="brand-2">runit</span>
+      </h2>
+      <div class="nav">
+        <nav>
+          <ul class="link-container">
+            <li><a href="#" class="link-item active">Home</a></li>
+            <li><a href="#" class="link-item">Service</a></li>
+            <li><a href="#" class="link-item">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="brand-quote">
+        <img
+          src="./images/Quiz bg img.png"
+          class="brand-img"
+          alt="Quiz background image"
+        />
+
+       <div class="task-app">
+        <div class="header">
+          <h3 class="outline">Quiz App</h3>
+          <p class="date"></p>
+        </div>
+
+        <div class="todo-input">
+          <input
+            type="text"
+            id="task-input"
+            class="task-input"
+            placeholder="Search for course"
+            
+          />
+          <button class="add-btn" id="add-btn"><img src="./images/search icon.png" alt="search icon"></button>
+        </div>
+        <div class="filters">
+          <span class="filter active1" data-filter="all">All</span>
+          <span class="filter" data-filter="all">MATHEMATICS</span>
+          <span class="filter" data-filter="all">GSP</span>
+          <span class="filter" data-filter="all">COS</span>
+    
+        </div>
+
+        <div class="todos-container">
+          <!-- Javascript will create the element to place the value -->
+          <ul class="todo-list">
+            <li class="todo-item">
+              <label>
+                <input type="checkbox" class="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <span class="todo-text-input">Write a page</span>
+              <span class="delete-btn"> </span>
+              <i class="fas fa-times"><i>
+            </li>
+          </ul>
+          <div class="empty-list hidden"></div>
+        </div>
+        <footer class="footer">
+          <p id="item-left" class="items-left">0 questions left</p>
+          
+        </footer>
+      </div>
+      </div>
+   
+    </div>
+  </body>
+  <script src="../main.js"></script>
+</html>
